@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Function:-block of code,used or defined to perform specific task
+        //Types of function
+        //normal function:-with parameters,without parameters,with default parameters
+
+        //normal function without parameters
+
+        function demo(){
+            console.log("Hello JS");
+        }
+        demo();
+        //normal function with parameters
+        function demo1(text){
+            console.log("Hello"+ text);
+        }
+        demo1("React");
+        function add(a,b=10){
+            console.log("Addition is" + (a+b));
+        }
+        add(1,23);
+        function cal(){
+            function add(a,b){
+            console.log("Addition is" + (a+b));
+        }
+        function sub(a,b){
+            console.log("Subtraction is" + (a-b));
+        }
+        function mul(a,b){
+            console.log("Multiplication is" + (a*b));
+        }
+        
+        add(9,5);
+        sub(9,5);
+        mul(9,5);
+    }
+    cal();
+    //Anomynous function:-
+    let msg=function(){
+        console.log("Bye bye ABES :)  :)");
+        console.log(typeof(msg));
+    }
+    msg();
+    //short code for above function
+    let msg1=()=>console.log("Chutti time");
+    msg1();
+    //arrowfunction using multiple lines
+    let msg2=(a,b)=>{
+        var num1=a;
+        var num2=b;
+        var res=num1/num2;
+        console.log("Result is" + res);
+    }
+    msg2(10,15);
+
+    </script>
+</body>
+</html>
