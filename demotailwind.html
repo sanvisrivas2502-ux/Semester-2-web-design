@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Layout</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Hero Section with Background Image -->
+  <section 
+    class="h-screen bg-cover bg-center flex items-center justify-center"
+    style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');"
+  >
+    <div class="bg-black/60 p-10 rounded-xl text-center text-white">
+      <h1 class="text-5xl font-bold mb-4">Welcome</h1>
+      <p class="text-lg">Beautiful Tailwind CSS Layout with Background Image</p>
+      <button class="mt-6 bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg">
+        Get Started
+      </button>
+    </div>
+  </section>
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto flex justify-between">
+      <h1 class="text-2xl font-bold">My Website</h1>
+
+      <ul class="flex gap-6">
+        <li><a href="#" class="hover:text-gray-200">Home</a></li>
+        <li><a href="#" class="hover:text-gray-200">About</a></li>
+        <li><a href="#" class="hover:text-gray-200">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Layout -->
+  <div class="container mx-auto mt-6 grid grid-cols-1 md:grid-cols-4 gap-4">
+
+    <!-- Sidebar -->
+    <aside class="bg-white p-4 rounded-lg shadow md:col-span-1">
+      <h2 class="text-xl font-semibold mb-4">Sidebar</h2>
+
+      <ul class="space-y-2">
+        <li><a href="#" class="text-blue-500">Dashboard</a></li>
+        <li><a href="#" class="text-blue-500">Profile</a></li>
+        <li><a href="#" class="text-blue-500">Settings</a></li>
+      </ul>
+    </aside>
+
+    <!-- Content -->
+    <main class="bg-white p-6 rounded-lg shadow md:col-span-3">
+      <h2 class="text-3xl font-bold mb-4">Main Content</h2>
+
+      <p class="text-gray-700">
+        This is a responsive layout using Tailwind CSS.
+      </p>
+
+      <!-- Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+
+        <div class="bg-blue-100 p-4 rounded-lg shadow">
+          <h3 class="text-xl font-semibold">Card 1</h3>
+          <p>Sample card content.</p>
+        </div>
+
+        <div class="bg-green-100 p-4 rounded-lg shadow">
+          <h3 class="text-xl font-semibold">Card 2</h3>
+          <p>Sample card content.</p>
+        </div>
+
+        <div class="bg-yellow-100 p-4 rounded-lg shadow">
+          <h3 class="text-xl font-semibold">Card 3</h3>
+          <p>Sample card content.</p>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-6">
+    © 2026 My Website
+  </footer>
+
+</body>
+</html>
