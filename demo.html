@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      /* Custom styles for the demo */
+      .header {
+       text-align: center;
+       color: white;
+       background-color: red;
+       padding: 20px;
+      }
+      </style>
+    <title>Responsive Flex Layout</title>
+  </head>
+  <body>
+    <header class="header rounded-lg fixed top-0 left-0 w-full z-10">
+      <h2 class="text-2xl font-bold">Header</h2>
+      </header>
+    <!--main element-->
+    <div class="max-w-5xl mx-auto  bg-[url(images/phone.jpeg)] bg-no-repeat bg-cover h-screen bg-scroll">
+   
+
+    <div class="grid grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 gap-4">
+  <div class="bg-cyan-300 h-100">01</div>
+  <div class="bg-lime-300 h-100">02</div>
+  <div class="bg-blue-300 h-100">03</div>
+  <!-- <div class="col-span-2 bg-pink-300 h-100">04</div>
+  <div class="bg-red-300 h-100">05</div>
+  <div class="bg-green-300 h-100">06</div>
+  <div class="col-span-2 bg-yellow-300 h-100">07</div> -->
+</div>
+  <p class="font-monospace text-xl text-lime-500 text-justify mt-20 ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Est, quibusdam officiis sunt aperiam repellat nihil maiores 
+        nulla similique delectus cum facilis excepturi possimus velit 
+        deleniti incidunt ducimus laudantium, necessitatibus ut.
+    </p> 
+    </div><!--main element-->
+  </body>
+</html>

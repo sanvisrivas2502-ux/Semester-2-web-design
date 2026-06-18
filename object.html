@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student ={
+    name: "jhon",
+    age: 23,
+    ismarried: false,
+    adress:{
+        streetNo:23,
+        area:"Indirapuram",
+        pin:201008,
+        city:"GZB",
+    },
+    education:["10th","12th","B.Tech"],
+        degree: "B.Tech",
+        branch: "CSE",
+        year: "2025",
+        getInfo:function(){
+            return "my current education is"+ student.degree;
+        }
+    };
+    console.log(student.education[2]);
+    console.log(typeof(student));
+    console.log(student.getInfo());
+    console.log('name'in student);
+    console.log(delete student.name);
+
+    for(let x in student){
+        console.log(student[x]);
+    }
+    let myInfo=new Object();
+    myInfo.name="Sanvi";
+    myInfo.age=19;
+    myInfo.adress="Greater Noida West";
+    
+
+
+    </script>
+</body>
+</html>
